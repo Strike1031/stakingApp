@@ -27,10 +27,10 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 import QueryBuilderTwoToneIcon from '@mui/icons-material/QueryBuilderTwoTone';
 import NotificationsNoneTwoToneIcon from '@mui/icons-material/NotificationsNoneTwoTone';
 
-import User1 from 'assets/images/users/avatar-1.jpg';
-import User2 from 'assets/images/users/avatar-2.jpg';
-import User3 from 'assets/images/users/avatar-3.jpg';
-import User4 from 'assets/images/users/avatar-4.jpg';
+// import User1 from 'assets/images/users/avatar-1.jpg';
+// import User2 from 'assets/images/users/avatar-2.jpg';
+// import User3 from 'assets/images/users/avatar-3.jpg';
+// import User4 from 'assets/images/users/avatar-4.jpg';
 
 // ==============================|| NOTIFICATION ||============================== //
 
@@ -115,7 +115,7 @@ const NotificationSection = () => {
                     </ListSubheader>
                     <ListItemButton alignItems="flex-start" sx={{ pt: 0 }}>
                       <ListItemAvatar>
-                        <Avatar alt="John Doe" src={User1} />
+                        {/* <Avatar alt="John Doe" src={User1} /> */}
                       </ListItemAvatar>
                       <ListItemText
                         primary={<Typography variant="subtitle1">John Doe</Typography>}
@@ -145,7 +145,7 @@ const NotificationSection = () => {
                     </ListSubheader>
                     <ListItemButton alignItems="flex-start" sx={{ pt: 0 }}>
                       <ListItemAvatar>
-                        <Avatar alt="Joseph William" src={User2} />
+                        {/* <Avatar alt="Joseph William" src={User2} /> */}
                       </ListItemAvatar>
                       <ListItemText
                         primary={<Typography variant="subtitle1">Joseph William</Typography>}
@@ -172,7 +172,7 @@ const NotificationSection = () => {
                     </ListItemButton>
                     <ListItemButton alignItems="flex-start">
                       <ListItemAvatar>
-                        <Avatar alt="Sara Soudein" src={User3} />
+                        {/* <Avatar alt="Sara Soudein" src={User3} /> */}
                       </ListItemAvatar>
                       <ListItemText
                         primary={<Typography variant="subtitle1">Sara Soudein</Typography>}
@@ -199,7 +199,7 @@ const NotificationSection = () => {
                     </ListItemButton>
                     <ListItemButton alignItems="flex-start">
                       <ListItemAvatar>
-                        <Avatar alt="Sepha Wilon" src={User4} />
+                        {/* <Avatar alt="Sepha Wilon" src={User4} /> */}
                       </ListItemAvatar>
                       <ListItemText
                         primary={<Typography variant="subtitle1">Sepha Wilon</Typography>}

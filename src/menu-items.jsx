@@ -56,18 +56,18 @@ export default {
           url: '/taskCenter'
         },
         {
-          id: 'withdrawl',
-          title: 'Withdrawl',
+          id: 'withdrawEarning',
+          title: 'Withdraw Earnings',
           type: 'item',
           icon: icons['GetAppOutlinedIcon'],
-          url: '/withdrawl'
+          url: '/withdrawEarning'
         },
         {
-          id: 'withdrawlHistory',
-          title: 'Withdrawl History',
+          id: 'withdrawalHistory',
+          title: 'Withdrawal History',
           type: 'item',
           icon: icons['RestoreOutlinedIcon'],
-          url: '/withdrawlHistory'
+          url: '/withdrawalHistory'
         },
         {
           id: 'invest',
