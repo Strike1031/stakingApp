@@ -19,9 +19,9 @@ const plans = [
 const InvestPage = () => {
   return (
     <Container maxWidth="lg" sx={{ mt: 4 }}>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} justifyContent="center">
         {plans.map((plan, index) => (
-          <Grid item xs={12} sm={6} md={6} key={index} px={10}>
+          <Grid item xs={12} sm={6} md={6} key={index} >
             <Card sx={{ padding: 2, borderRadius: '16px', backgroundColor: '#8a82f0', color: 'white' }}>
               <CardContent>
                 <Box display="flex" justifyContent="center">
