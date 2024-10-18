@@ -14,7 +14,7 @@ import { drawerWidth } from 'config.js';
 import NavCard from './MenuList/NavCard';
 
 // assets
-import logo from 'assets/images/logo.svg';
+import logo from 'assets/images/logo.png';
 
 // custom style
 const Nav = styled((props) => <nav {...props} />)(({ theme }) => ({

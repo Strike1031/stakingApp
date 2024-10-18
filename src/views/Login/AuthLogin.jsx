@@ -25,12 +25,15 @@ import { Formik } from 'formik';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Google from 'assets/images/social-google.svg';
+import { useNavigate } from 'react-router';
+
 
 // ==============================|| FIREBASE LOGIN ||============================== //
 
 const AuthLogin = ({ ...rest }) => {
   const theme = useTheme();
   const [showPassword, setShowPassword] = React.useState(false);
+  const navigate = useNavigate();
 
   const handleClickShowPassword = () => {
     setShowPassword(!showPassword);
@@ -40,9 +43,14 @@ const AuthLogin = ({ ...rest }) => {
     event.preventDefault();
   };
 
+  const handleSubmit = (event) => {
+    // login to dashboard
+    navigate("/");
+  }
+
   return (
     <>
-      <Grid container justifyContent="center">
+      {/* <Grid container justifyContent="center">
         <Grid item xs={12}>
           <Button
             fullWidth={true}
@@ -73,15 +81,15 @@ const AuthLogin = ({ ...rest }) => {
             Sign in with Google
           </Button>
         </Grid>
-      </Grid>
+      </Grid> */}
 
-      <Box alignItems="center" display="flex" mt={2}>
+      {/* <Box alignItems="center" display="flex" mt={2}>
         <Divider sx={{ flexGrow: 1 }} orientation="horizontal" />
         <Typography color="textSecondary" variant="h5" sx={{ m: theme.spacing(2) }}>
           OR
         </Typography>
         <Divider sx={{ flexGrow: 1 }} orientation="horizontal" />
-      </Box>
+      </Box> */}
 
       <Formik
         initialValues={{
@@ -94,7 +102,7 @@ const AuthLogin = ({ ...rest }) => {
           password: Yup.string().max(255).required('Password is required')
         })}
       >
-        {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
+        {({ errors, handleBlur, handleChange, isSubmitting, touched, values }) => (
           <form noValidate onSubmit={handleSubmit} {...rest}>
             <TextField
               error={Boolean(touched.email && errors.email)}
@@ -157,7 +165,7 @@ const AuthLogin = ({ ...rest }) => {
 
             <Box mt={2}>
               <Button color="primary" disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained">
-                Log In
+                Login to your account
               </Button>
             </Box>
           </form>

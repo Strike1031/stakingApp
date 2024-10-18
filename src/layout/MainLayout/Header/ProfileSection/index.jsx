@@ -11,17 +11,26 @@ import LockOpenTwoTone from '@mui/icons-material/LockOpenTwoTone';
 import SettingsTwoToneIcon from '@mui/icons-material/SettingsTwoTone';
 import AccountCircleTwoToneIcon from '@mui/icons-material/AccountCircleTwoTone';
 import MeetingRoomTwoToneIcon from '@mui/icons-material/MeetingRoomTwoTone';
+import { useNavigate } from 'react-router';
 
 // ==============================|| PROFILE SECTION ||============================== //
 
 const ProfileSection = () => {
   const theme = useTheme();
-
+  
   const [selectedIndex, setSelectedIndex] = React.useState(1);
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
+  const navigate = useNavigate();
 
   const handleListItemClick = (event, index) => {
+    switch (index) {
+      case 0:
+        navigate("/application/login");
+        break;
+      default:
+        break;
+    }
     setSelectedIndex(index);
   };
 
@@ -95,13 +104,13 @@ const ProfileSection = () => {
                     borderRadius: '10px'
                   }}
                 >
-                  <ListItemButton selected={selectedIndex === 0} onClick={(event) => handleListItemClick(event, 0)}>
+                  {/* <ListItemButton selected={selectedIndex === 0} onClick={(event) => handleListItemClick(event, 0)}>
                     <ListItemIcon>
                       <SettingsTwoToneIcon />
                     </ListItemIcon>
                     <ListItemText primary="Settings" />
-                  </ListItemButton>
-                  <ListItemButton selected={selectedIndex === 1} onClick={(event) => handleListItemClick(event, 1)}>
+                  </ListItemButton> */}
+                  {/* <ListItemButton selected={selectedIndex === 1} onClick={(event) => handleListItemClick(event, 1)}>
                     <ListItemIcon>
                       <PersonTwoToneIcon />
                     </ListItemIcon>
@@ -118,8 +127,8 @@ const ProfileSection = () => {
                       <LockOpenTwoTone />
                     </ListItemIcon>
                     <ListItemText primary="Lock Screen" />
-                  </ListItemButton>
-                  <ListItemButton selected={selectedIndex === 4}>
+                  </ListItemButton> */}
+                  <ListItemButton selected={selectedIndex === 0} onClick={(event) => handleListItemClick(event, 0)}>
                     <ListItemIcon>
                       <MeetingRoomTwoToneIcon />
                     </ListItemIcon>

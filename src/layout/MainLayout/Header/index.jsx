@@ -13,7 +13,7 @@ import { drawerWidth } from 'config.js';
 
 // assets
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
-import logo from 'assets/images/logo.svg';
+import logo from 'assets/images/logo.png';
 
 // ==============================|| HEADER ||============================== //
 
@@ -27,7 +27,7 @@ const Header = ({ drawerToggle }) => {
           <Box sx={{ display: { xs: 'none', md: 'block' } }}>
             <Grid item>
               <Box mt={0.5}>
-                {/* <img src={logo} alt="Logo" /> */}
+                <img src={logo} alt="Logo" />
               </Box>
             </Grid>
           </Box>
@@ -46,8 +46,8 @@ const Header = ({ drawerToggle }) => {
         </Grid>
       </Box>
       <Box sx={{ flexGrow: 1 }} />
-      <SearchSection theme="light" />
-      <NotificationSection />
+      {/* <SearchSection theme="light" />
+      <NotificationSection /> */}
       <ProfileSection />
     </>
   );

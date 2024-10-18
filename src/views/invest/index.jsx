@@ -8,26 +8,17 @@ import { Card, CardHeader, CardContent, Divider, Grid, Typography } from '@mui/m
 import Breadcrumb from 'component/Breadcrumb';
 import { gridSpacing } from 'config.js';
 
-// ==============================|| SAMPLE PAGE ||============================== //
 
-const SamplePage = () => {
+const InvestPage = () => {
   return (
     <>
-      <Breadcrumb title="Sample Page">
-        <Typography component={Link} to="/" variant="subtitle2" color="inherit" className="link-breadcrumb">
-          Home
-        </Typography>
-        <Typography variant="subtitle2" color="primary" className="link-breadcrumb">
-          Sample Page
-        </Typography>
-      </Breadcrumb>
       <Grid container spacing={gridSpacing}>
         <Grid item>
           <Card>
             <CardHeader
               title={
                 <Typography component="div" className="card-header">
-                  Sample Page
+                  InvestPage
                 </Typography>
               }
             />
@@ -47,4 +38,4 @@ const SamplePage = () => {
   );
 };
 
-export default SamplePage;
+export default InvestPage;

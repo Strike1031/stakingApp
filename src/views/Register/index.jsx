@@ -9,7 +9,7 @@ import { Card, CardContent, Typography, Grid } from '@mui/material';
 import AuthRegister from './AuthRegister';
 
 // assets
-import Logo from 'assets/images/logo-dark.svg';
+import Logo from 'assets/images/logo-dark.png';
 
 // ==============================|| REGISTER ||============================== //
 
@@ -42,20 +42,20 @@ const Register = () => {
           <CardContent sx={{ p: theme.spacing(5, 4, 3, 4) }}>
             <Grid container direction="column" spacing={4} justifyContent="center">
               <Grid item xs={12}>
-                <Grid container justifyContent="space-between">
+                <Grid container justifyContent="center">
                   <Grid item>
                     <Typography color="textPrimary" gutterBottom variant="h2">
                       Register
                     </Typography>
-                    <Typography variant="body2" color="textSecondary">
+                    {/* <Typography variant="body2" color="textSecondary">
                       To keep connected with us.
-                    </Typography>
+                    </Typography> */}
                   </Grid>
-                  <Grid item>
+                  {/* <Grid item>
                     <RouterLink to="/">
                       <img alt="Auth method" src={Logo} />
                     </RouterLink>
-                  </Grid>
+                  </Grid> */}
                 </Grid>
               </Grid>
               <Grid item xs={12}>
